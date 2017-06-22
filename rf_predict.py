@@ -17,9 +17,9 @@ class RFPredictor(object):
 
 def get_config():
 
-    feature_root = "ttt"
     outdir = "."
-    pickle_name = "%s.wvt_pca_vectors.pkl" % (feature_root,)
+    feature_root = "20170602"
+    pickle_name = "wvt_pca_vectors.%s.pkl" % (feature_root,)
 
     import os
     wvt_pca_vector_pkl_name = os.path.join(outdir, pickle_name)
